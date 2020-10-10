@@ -1,0 +1,100 @@
+{
+  "main": {
+    "id": "c3f538fe36e2d214",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d6dd223e82d985e",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Python/Intro To Python.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "7708a72c80998b66",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Python/Intro To Python.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "03c6b001865288f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "398e67be8f83cd21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "829f17c31b5fce8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "df9d95c4e0949227",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7369f0becc11489e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e5cbbe8af1707ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b62b13706cf248ff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Python/Intro To Python.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Python/Intro To Python.md",
+    "Python/Index.md",
+    "Machine Learning & Data Science/Index.md",
+    "Machine Learning & Data Science/Into To Machine Learning.md",
+    "Python/Untitled.md",
+    "Index.md",
+    "Untitled.md",
+    "Into To Machine Learning.md",
+    "Machine Learning & Data Science/Untitled.md"
+  ]
+}
