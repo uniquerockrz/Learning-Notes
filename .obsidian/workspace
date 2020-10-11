@@ -10,18 +10,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Python/Intro To Python.md",
+            "file": "Python/Tuples.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "7708a72c80998b66",
+        "id": "62248c9bf484c23f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Python/Intro To Python.md",
+            "file": "Python/Tuples.md",
             "mode": "preview"
           }
         }
@@ -75,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Intro To Python.md"
+                "file": "Python/Tuples.md"
               }
             }
           }
@@ -87,14 +87,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "Python/Intro To Python.md",
-    "Python/Index.md",
-    "Machine Learning & Data Science/Index.md",
-    "Machine Learning & Data Science/Into To Machine Learning.md",
+    "Python/Tuples.md",
+    "Python/Lists.md",
+    "Python/00_Index.md",
     "Python/Untitled.md",
-    "Index.md",
-    "Untitled.md",
-    "Into To Machine Learning.md",
-    "Machine Learning & Data Science/Untitled.md"
+    "Python/Flow Control.md",
+    "Python/Conditionals.md",
+    "Python/Intro To Python.md",
+    "Python/Functions.md",
+    "Python/Index.md",
+    "Machine Learning & Data Science/Index.md"
   ]
 }

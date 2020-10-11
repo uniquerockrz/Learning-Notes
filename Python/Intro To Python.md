@@ -6,6 +6,12 @@ If the python is installed in your computer, you can fire it up by typing `pytho
 
 This will open a read evaluate print loop (REPL). You can type python commands here and immediately get the results. Other ways of running python is to create a script and save it as `.py` file and run that using `python <filename>` command. You can also use IDLE which is an easy to use python IDE.
 
+## Indentation And Blocks
+
+Python, like other programming languages relies on blocks of code for sequence of execution, however, these blocks of code are not separated by parenthesis. Python uses indentation to denote blocks of code. 
+
+These blocks often start with `:`, which denotes a new block of code with some indentation. These are used in blocks such as conditionals, loops, etc. 
+
 ## Data Types
 
 Like most languages, python has mostly 4 major data types.

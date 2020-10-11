@@ -5,3 +5,7 @@ Python is a high level programming language that is both easy to use and powerfu
 ## Table Of Contents
 
 * [[Intro To Python]]
+* [[Functions]]
+* [[Flow Control]]
+* [[Lists]]
+* [[Tuples]]
