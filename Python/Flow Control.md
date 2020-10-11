@@ -15,7 +15,7 @@ else:
     print('Bye')
 ```
 
-Anything except empty string is taken as a truthy value. Any number except zero is taken as a truty value.
+Anything except empty string is taken as a truthy value. Any number except zero is taken as a truthy value.
 
 ## While Loops
 

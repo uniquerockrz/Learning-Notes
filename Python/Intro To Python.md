@@ -53,7 +53,7 @@ a is b # True
 
 ## Comments
 
-Comments start wth the # pound character.
+Comments start with the # pound character.
 
 ```python
 # this is a comment
@@ -61,7 +61,7 @@ Comments start wth the # pound character.
 
 ## Printing And Inputting Stuff
 
-You can use the `print` function in python3 to print to stdout. Likewise, you can use `input` to read from stdin.
+You can use the `print` function in python3 to print to stdout Likewise, you can use `input` to read from stdin.
 
 ```python
 print('Hello, Whats Your Name?')

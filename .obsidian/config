@@ -9,5 +9,17 @@
     "command-palette": true,
     "markdown-importer": true,
     "word-count": true
-  }
+  },
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "truthy",
+    "docstrings",
+    "Docstrings",
+    "stdout",
+    "stdin",
+    "programmatically",
+    "len",
+    "callee",
+    "substring"
+  ]
 }

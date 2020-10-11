@@ -9,3 +9,12 @@ Python is a high level programming language that is both easy to use and powerfu
 * [[Flow Control]]
 * [[Lists]]
 * [[Tuples]]
+* [[Strings]]
+* [[Dictionaries]]
+* [[Exception Handling]]
+
+## TODO
+
+* Explain things better in list, tuples and dictionaries, especially their comprehension
+* More details are needed about frequently used python methods, such as `emunerate`
+* More topics such as operator overloading, modules, packages etc.

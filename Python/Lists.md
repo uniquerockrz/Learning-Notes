@@ -75,7 +75,7 @@ You can also use some other python functions with lists, such as `len`, `sorted`
 
 ## Copy By Reference In Lists
 
-Lists are always copied by reference, Which means, if you pass a list to a function and mutate it there, it will be also reflected in the callee function. This can pose a few problems. Thats where copy module comes in.
+Lists are always copied by reference, Which means, if you pass a list to a function and mutate it there, it will be also reflected in the callee function. This can pose a few problems. That's where copy module comes in.
 
 Copy module allows you to deep and shallow copy lists.
 

@@ -1,6 +1,6 @@
 # Tuples
 
-Tuples are just a list of comma separated values in python. You can use `()` to represent them. However, thats optional.
+Tuples are just a list of comma separated values in python. You can use `()` to represent them. However, that's optional.
 
 The best use case of tuples is to swap values without using a third variable.
 

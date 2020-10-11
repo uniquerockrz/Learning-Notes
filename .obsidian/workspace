@@ -4,25 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "3d6dd223e82d985e",
+        "id": "bdd82b865619734e",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Python/Tuples.md",
+            "file": "Python/00_Index.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "62248c9bf484c23f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Python/Tuples.md",
-            "mode": "preview"
           }
         }
       }
@@ -75,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Tuples.md"
+                "file": "Python/00_Index.md"
               }
             }
           }
@@ -87,15 +76,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "Python/Tuples.md",
-    "Python/Lists.md",
     "Python/00_Index.md",
     "Python/Untitled.md",
-    "Python/Flow Control.md",
-    "Python/Conditionals.md",
+    "Python/Exception Handling.md",
+    "Python/Dictionaries.md",
+    "Python/Strings.md",
+    "Python/Tuples.md",
+    "Python/Lists.md",
     "Python/Intro To Python.md",
     "Python/Functions.md",
-    "Python/Index.md",
-    "Machine Learning & Data Science/Index.md"
+    "Python/Flow Control.md"
   ]
 }
