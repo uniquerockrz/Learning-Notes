@@ -109,20 +109,26 @@ print(mean_absolute_error(val_y, val_predictions))
 
 Here we are taking the mean absolute error to judge the model accuracy.
 
+### Types Of Errors For Assessing The Model
+
+The one we have used above is called mean absolute error. It is really simple, and just takes the absolute difference between the predicted and the actual value, and takes an mean of it. 
+
+Another most commonly used error type is called root mean square error, or RMSE in short. RMSE takes a difference between the predicted and actual values, squares it, and takes the mean of that, and then takes a root of it. It is quite biased towards huge errors and thus suited for dataset which follow a normal bell like distribution with few outliers. 
+
 ### Underfitting And Overfitting
 
-When the prediction model builds itself very close to the training data, so and so that the predicted data gets effected a lot with a high MSE, the model is said to be overfitted.
+When the prediction model builds itself very close to the training data, so and so that the predicted data gets effected a lot with a high MAE, the model is said to be overfitted.
 
 On the other hand, when the training error itself is very high, we can say that the model hasn't taken most of the features of the training data, thus it can't predict well.
 
 In short,
 
-* **Underfitting: ** Training MSE very high
+* **Underfitting:** Training MSE is very high.
 * **Overfitting:** Training MSE low, predicted MSE very high. 
 
 ### Optimizing The Model
 
-One of the parameters we can use to optimize the decision tree model is `max_leaf_nodes`, which says how many leaf nodes (the end node) the tree can have. We can build a for loop supplying various sizes to this and noting the number that produces the least MSE. 
+One of the parameters we can use to optimize the decision tree model is `max_leaf_nodes`, which says how many leaf nodes (the end node) the tree can have. We can build a for loop supplying various sizes to this and noting the number that produces the least MAE. 
 
 ```python
 from sklearn.metrics import mean_absolute_error
@@ -154,4 +160,4 @@ melb_preds = forest_model.predict(val_X)
 print(mean_absolute_error(val_y, melb_preds))
 ```
 
-You can test this and see if its better than the Decision Tree that you used above by comparing the MSE. 
+You can test this and see if its better than the Decision Tree that you used above by comparing the MAE. 
