@@ -2,6 +2,15 @@
 
 Machine Learning can be described as a study of training computers to do tasks without explicitly programming them.
 
+## Types Of Machine Learning Systems
+Machine Learning systems can be of many types, depending on number of factors.
+
+* Supervised or Unsupervised: Supervised is where you feed the system training data and the model 'learns' from the data itself. Unsupervised is where the model itself finds patterns in the data without the external supervision of labels. Example: supervised - classification, unsupervised: clustering.
+	* Semi supervised : an combination of above, where the model finds patterns in the data and then you label them. Example: photo name labels in google photos.
+	* Reinforcement learning: The model learns the data based on a certain objective, like getting a reward or avoiding a penalty.  Example: Alpha Go game model by Google.
+* Batch or Online learning: Batch learning is where the system must learn by taking all the data at once. Online learning is where the model can take incremental instances of data and learn from that.
+* Instance based learning and model based learning: In instance based, the model takes the new data it has to predict, compares it to the data it already knows and gives the closest match result. Example: a decision tree. In model based learning, it generalizes to build an form, and then predicts the output based on the form. Example: linear regression. 
+
 ## Simple Example 
 Let's take an example of one of the most rudimentary application of machine learning - predicting house prices. We use a very simple decision tree model here.
 
@@ -108,8 +117,8 @@ On the other hand, when the training error itself is very high, we can say that 
 
 In short,
 
-**Underfitting: ** Training MSE very high
-**Overfitting:** Training MSE low, predicted MSE very high. 
+* **Underfitting: ** Training MSE very high
+* **Overfitting:** Training MSE low, predicted MSE very high. 
 
 ### Optimizing The Model
 
