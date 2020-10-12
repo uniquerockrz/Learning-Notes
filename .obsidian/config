@@ -20,6 +20,12 @@
     "programmatically",
     "len",
     "callee",
-    "substring"
+    "substring",
+    "dataframe",
+    "dataset",
+    "sklearn",
+    "Underfitting",
+    "Overfitting",
+    "overfitted"
   ]
 }

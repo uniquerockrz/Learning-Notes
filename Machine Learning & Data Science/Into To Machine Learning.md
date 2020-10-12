@@ -1,4 +1,112 @@
-## Intro To Machine Learning
+# Intro To Machine Learning
 
-Machine Learning can be decribed as a study of training computers to do tasks without explicitly programming them.
+Machine Learning can be described as a study of training computers to do tasks without explicitly programming them.
 
+## Simple Example 
+Let's take an example of one of the most rudimentary application of machine learning - predicting house prices. We use a very simple decision tree model here.
+
+One of the easiest thing we can do is to divide houses by two categories according to rooms. And then take the average of each category to determine an approx house price. In python, this can be formed as:
+
+```python
+if rooms == 1:
+	price = 100000
+else:
+	price = 150000
+```
+
+A decision tree looks up at the past data of house prices and build a model like above. This process is called fitting, and the data it builds the model on is called the training set.
+
+We can go further with this decision tree by including more features (also known as predictors) which can be lot size, number of bathrooms etc. 
+
+### Loading Up The Data And Doing Some Basic Explorations
+We will use pandas, a python library to load up the data and do some basic explorations on that. 
+
+```python
+from pandas import pd
+
+df = pandas.reas_csv('/home/srvmdk/HousingData.csv')
+```
+
+This loads up the CSV data and stores it into a dataframe which you can imagine as a table  or a matrix. You can get some summary statistics by using:
+
+```python
+df.describe()
+```
+
+This will give you stuff like mean, median, mode, count, min, max and the standard deviation of numerical features. 
+
+If there are null or missing values, you can drop them using
+
+```python
+df.dropna(axis=0)
+```
+
+The axis determines whether you want to go by rows `0` or columns `1`.
+
+### Selecting Columns For Model Training
+
+You can choose a column by its name in dot notation. In this case, we will choose the target value we will build our model on. 
+
+```python
+y = df.SalePrice
+```
+
+You can use the columns attribute to see all the columns the dataset has.
+
+```python
+df.columns
+```
+
+There are several ways you can access multiple columns.
+
+```python
+X = df[['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF']]
+X = df.iloc[[0:5,0:4]] # get rows 0 to 5, columns 0 to 4
+```
+
+### Build The Model And Predict Values
+
+We use sklearn for this. 
+
+```python
+from sklearn.tree import DecisionTreeRegressor
+melbourne_model = DecisionTreeRegressor(random_state=1)
+melbourne_model.fit(X, y)
+```
+
+We specify a random state so that the results are same in each run. 
+
+```python
+melbourne_model.predict(X)
+```
+
+We then predict using the predict function.
+
+### Validating The Model
+
+The model takes up the shape of the training data. Hence, if we actually train and test the model on the training data, we won't be able to get the actual accuracy of the model. To overcome that, we split the data into a training set and a validation set, and then build the model on the training set and test it on the validation set.
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error
+
+train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+melbourne_model = DecisionTreeRegressor()
+melbourne_model.fit(train_X, train_y)
+val_predictions = melbourne_model.predict(val_X)
+
+print(mean_absolute_error(val_y, val_predictions))
+```
+
+Here we are taking the mean absolute error to judge the model accuracy.
+
+### Underfitting And Overfitting
+
+When the prediction model builds itself very close to the training data, so and so that the predicted data gets effected a lot with a high MSE, the model is said to be overfitted.
+
+On the other hand, when the training error itself is very high, we can say that the model hasn't taken most of the features of the training data, thus it can't predict well.
+
+In short,
+
+**Underfitting: ** Training MSE very high
+**Overfitting:** Training MSE low, predicted MSE very high. 
