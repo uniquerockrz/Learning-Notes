@@ -110,3 +110,39 @@ In short,
 
 **Underfitting: ** Training MSE very high
 **Overfitting:** Training MSE low, predicted MSE very high. 
+
+### Optimizing The Model
+
+One of the parameters we can use to optimize the decision tree model is `max_leaf_nodes`, which says how many leaf nodes (the end node) the tree can have. We can build a for loop supplying various sizes to this and noting the number that produces the least MSE. 
+
+```python
+from sklearn.metrics import mean_absolute_error
+from sklearn.tree import DecisionTreeRegressor
+
+def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):
+    model = DecisionTreeRegressor(max_leaf_nodes=max_leaf_nodes, random_state=0)
+    model.fit(train_X, train_y)
+    preds_val = model.predict(val_X)
+    mae = mean_absolute_error(val_y, preds_val)
+    return(mae)
+	
+for max_leaf_nodes in [5, 50, 500, 5000]:
+    my_mae = get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y)
+    print("Max leaf nodes: %d Mean Absolute Error:  %d" %(max_leaf_nodes, my_mae))
+```
+
+### Using Another Model
+
+You can often increase the accuracy by entirely using another model. For our example, we use the Random Forest model which is like Decision Tree, except the leafs are way more better pronounced and usually is much more accurate for the same dataset.
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+
+forest_model = RandomForestRegressor(random_state=1)
+forest_model.fit(train_X, train_y)
+melb_preds = forest_model.predict(val_X)
+print(mean_absolute_error(val_y, melb_preds))
+```
+
+You can test this and see if its better than the Decision Tree that you used above by comparing the MSE. 
